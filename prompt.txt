@@ -1,0 +1,15 @@
+Example 1: Write a code that read csv file  @data_to_check.csv  one by one and use ကျေးရွာအုပ်စု column as an  input. for example MMGeoCoder("အလယ်ချောင်း"), Then put the location result in csv file. example location output is  'ပါလှဲ့ (အထက်)': {'address': '၊ ၊ ၊ ဧရာဝတီတိုင်းဒေသကြီး', 'latitude': '17.0523532', 'longitude': '95.7178667', 'pcode': None} but we only take latitude and longitude value in result csv file. when none return place the result with empty string for latitude and longitude .
+
+Example 2: 
+Build a Telegram bot that automatically generates a podcast audio file from any PDF uploaded to a group or channel. 
+The bot should use the Gemini API for script generation and gTTS for audio synthesis. 
+The process should start as soon as a PDF is uploaded, and the bot should provide real-time progress updates.
+ Bot Features
+* PDF Upload Trigger: As soon as a user uploads a PDF, the bot starts processing (no need for a separate command).
+* Text Extraction: Extract text from the PDF (using PyPDF2).
+* Script Generation: Use the Gemini API to generate a podcast script from the extracted text.
+* Audio Generation: Convert the script to speech using gTTS.
+* Telegram Integration: Send the resulting audio file back to the chat.
+* Progress Updates: Update the user in real time (e.g., “Extracting text…”, “Generating script…”, “Converting to audio…”).
+* Logging: Log all major steps and errors for debugging and transparency.
+* Environment Variables: Use a .env file for sensitive keys (TELEGRAM_BOT_TOKEN, GEMINI_API_KEY, GEMINI_MODEL).
